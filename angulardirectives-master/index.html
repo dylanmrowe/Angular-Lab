@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+  <script src="./js/avatar.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+	
+	<link rel="stylesheet" type="text/css" href="avatar.css">
+</head>
+<body>
+	
+	
+<div ng-app='app' ng-controller='mainCtrl'>
+<h1>Add Some Avatars!</h1>
+<form name='userForm' ng-submit='addNew(userForm)' id = "inputdata">
+      <input placeholder='Name' ng-model='userForm.name'/>
+      <input placeholder='Image Url' ng-model='userForm.url'/>
+    
+	<button type='submit'>Add</button>
+</form>
+<!--<ul class='User-list'>
+ <li ng-repeat='user in users'>
+	<avatar user='user' />
+	 <div class='Avatar'>
+   		<h4>{{user.name}}  </h4>  <img src={{user.avatarUrl}} > 
+	 </div>
+	
+ </li>-->
+	
+<ul class='User-list'>
+  <li ng-repeat='user in users'>
+    <avatar user='user' />
+  </li>
+</ul>
+</body>
+</html>
+

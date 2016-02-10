@@ -1,0 +1,33 @@
+.User-list {
+  list-style: none;
+}
+
+.Avatar {
+  text-align: center;  
+}
+
+.Avatar img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+	border:3px solid blue;
+}
+
+.Avatar h4 {
+  text-transform: capitalize;
+  color: white;
+}
+
+body{
+	background-color: black;
+}
+
+#inputdata{
+	text-align: center;
+	margin: 50px;
+}
+
+h1{
+	color:white;
+	text-align: center;
+}
